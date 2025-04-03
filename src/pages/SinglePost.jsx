@@ -2,8 +2,16 @@ import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
 
+import { useContext } from "react";
+import PostContext from '../context/PostContext.jsx';
+
+
 
 export default function SinglePost() {
+
+    const { posts } = useContext(PostContext);
+
+
 
     /*  const [post, setPost] = useState()
   

@@ -1,27 +1,20 @@
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
-//const api_endpoint = 'https://fakestoreapi.com/products';
+import { useContext } from "react";
+import PostContext from '../context/PostContext.jsx';
+import { Link } from "react-router-dom";
 
 export default function PostsList() {
 
-    /*const [posts, setPosts] = useState([])
+    const { posts } = useContext(PostContext);
 
-    useEffect(() => {
-        fetch(api_endpoint)
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
-
-                setPosts(data)
-            })
-    }, [])*/
+    console.log(posts)
 
     return (
 
         <>
 
-            {/*
+
+
             <main>
                 <div className="container">
                     <div className="row mt-5 justify-content-center">
@@ -43,7 +36,7 @@ export default function PostsList() {
                 </div>
             </main>
 
-            */}
+
         </>
     )
 };
