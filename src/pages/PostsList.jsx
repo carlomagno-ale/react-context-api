@@ -13,8 +13,6 @@ export default function PostsList() {
 
         <>
 
-
-
             <main>
                 <div className="container">
                     <div className="row mt-5 justify-content-center">
