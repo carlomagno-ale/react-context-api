@@ -1,1 +1,82 @@
 @import 'bootstrap';
+
+:root {
+
+    --mid-bg: rgb(239, 239, 239);
+    --light: #CBC3E3;
+    --bold: #5233dd;
+
+}
+
+body {
+
+    background-color: white;
+    height: 100vh;
+}
+
+.container {
+
+    width: 60% !important;
+}
+
+header {
+
+    background-color: var(--light);
+    height: 3.2rem;
+}
+
+
+.active {
+
+    font-weight: bold;
+    border-bottom: solid 0.2rem var(--bold);
+    color: var(--bold) !important;
+}
+
+.jumbotron {
+
+    background-image: url('https://picsum.photos/id/249/2000');
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+    width: 100%;
+}
+
+.title {
+
+    color: var(--bold);
+}
+
+main {
+
+    min-height: 70vh;
+}
+
+.card {
+
+    background-color: var(--light);
+
+    img {
+        height: 15rem;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    span {
+
+        font-size: 0.7rem;
+    }
+}
+
+.single-post {
+
+    img {
+
+        width: 20%;
+    }
+}
