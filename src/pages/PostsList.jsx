@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const api_endpoint = 'https://fakestoreapi.com/products';
+//const api_endpoint = 'https://fakestoreapi.com/products';
 
 export default function PostsList() {
 
-    const [posts, setPosts] = useState([])
+    /*const [posts, setPosts] = useState([])
 
     useEffect(() => {
         fetch(api_endpoint)
@@ -15,11 +15,13 @@ export default function PostsList() {
 
                 setPosts(data)
             })
-    }, [])
+    }, [])*/
 
     return (
 
         <>
+
+            {/*
             <main>
                 <div className="container">
                     <div className="row mt-5 justify-content-center">
@@ -40,6 +42,8 @@ export default function PostsList() {
                     </div>
                 </div>
             </main>
+
+            */}
         </>
     )
 };

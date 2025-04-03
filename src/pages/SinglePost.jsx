@@ -1,33 +1,37 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
+
+
 export default function SinglePost() {
 
-    const [post, setPost] = useState()
+    /*  const [post, setPost] = useState()
+  
+      const { id } = useParams()
+  
+      const navigate = useNavigate();
+  
+      useEffect(() => {
+          fetch(`https://fakestoreapi.com/products/${id}`)
+              .then(res => res.json())
+              .then(data => {
+  
+                  setPost(data)
+                  console.log(data)
+  
+              })
+              .catch(err => {
+                  console.log('ERROR', err);
+              })
+  
+      }, [])
 
-    const { id } = useParams()
-
-    const navigate = useNavigate();
-
-    useEffect(() => {
-        fetch(`https://fakestoreapi.com/products/${id}`)
-            .then(res => res.json())
-            .then(data => {
-
-                setPost(data)
-                console.log(data)
-
-            })
-            .catch(err => {
-                console.log('ERROR', err);
-            })
-
-    }, [])
-
-    console.log(post)
+    console.log(post)*/
 
     return (
         <>
+
+            {/*
             <main>
                 <div className="container text-center">
 
@@ -47,6 +51,8 @@ export default function SinglePost() {
 
                 </div>
             </main>
+
+            */}
         </>
     );
 }
